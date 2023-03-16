@@ -1,0 +1,286 @@
+.section-score {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  background-color: transparent;
+}
+
+.songbird-logo {
+  width: 200px;
+}
+
+.score {
+  font-size: 1.5em;
+}
+
+.level {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-radius: 5px;
+  background-color: #008966;
+}
+@media screen and (max-width: 768px) {
+  .level {
+    flex-wrap: wrap;
+  }
+}
+
+.level-item {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 5px;
+}
+.level-item.active {
+  background-color: #00bc8c;
+}
+@media screen and (max-width: 768px) {
+  .level-item {
+    width: 115px;
+    padding: 5px;
+  }
+}
+
+.section-question {
+  padding: 15px;
+}
+
+.question {
+  flex-grow: 1;
+  padding: 0 35px 0 50px;
+}
+@media screen and (max-width: 768px) {
+  .question {
+    padding: 0 5px 0 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .question {
+    width: 100%;
+    padding: 1em 0 0;
+  }
+}
+
+.bird-title {
+  margin: 0;
+  text-align: left;
+  font-weight: 400;
+}
+.bird-title.large {
+  font-size: 2em;
+}
+.bird-title.medium {
+  font-size: 1.5em;
+}
+
+.bird-subtitle {
+  margin: 0;
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.separator {
+  margin: 10px 0;
+  border-bottom: 1px solid #444444;
+}
+
+.bird-image {
+  width: 200px;
+  height: 155px;
+  border-radius: 10px;
+}
+
+.audio-player {
+  width: 100%;
+  min-width: 100px;
+  margin: 10px 40px 8px 0;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.playback-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 20px 12px 0;
+  transition: 0.2s;
+  border: 2px solid #00bc8c;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.playback-button svg {
+  width: 18px;
+  height: 18px;
+  transition: 0.2s;
+  color: #54b1c1;
+}
+
+.playback-button:hover svg {
+  width: 18px;
+  height: 18px;
+  color: #00bc8c;
+  transform: scale(1.05);
+}
+
+.timebar {
+  position: relative;
+  flex: 1 1;
+  margin-top: 12px;
+}
+
+.timebar-bar {
+  height: 4px;
+  background: linear-gradient(to right, rgb(0, 188, 140) 0%, rgb(61, 133, 140) 0%, rgb(115, 115, 115) 0%, rgb(115, 115, 115) 100%);
+  cursor: pointer;
+}
+
+.timebar-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, calc(-50% + 2px));
+  border-radius: 50%;
+  background-color: grey;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.timebar-time-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 11px;
+  color: lightgrey;
+}
+
+.volume {
+  margin-left: 15px;
+}
+
+.volume-icon {
+  width: 20px;
+  border-radius: 50%;
+}
+
+.volume-control {
+  width: 20px;
+  margin-top: 5px;
+  padding: 0;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #008966;
+  cursor: pointer;
+}
+
+.answers-wrapper {
+  display: flex;
+}
+@media screen and (max-width: 768px) {
+  .answers-wrapper {
+    flex-direction: column;
+  }
+}
+
+.section-answers {
+  flex-grow: 1;
+  width: 100%;
+  margin: 0 1.5em 0 0;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .section-answers {
+    margin: 0 0 1.5em 0;
+  }
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.answers-item {
+  flex-grow: 1;
+  padding: 1em;
+  border-bottom: 1px solid #444444;
+}
+.answers-item:last-child {
+  border: none;
+}
+.answers-item:hover {
+  cursor: pointer;
+  background-color: #444444;
+}
+
+.answers-point {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px 0 0;
+  border-radius: 50%;
+  background-color: #666666;
+}
+.answers-point.correct {
+  background-color: #00bc8c;
+}
+.answers-point.error {
+  background-color: red;
+}
+
+.section-info {
+  flex-grow: 1;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .section-info {
+    width: auto;
+  }
+}
+
+.bird-cap {
+  margin: 0;
+}
+
+.bird-info {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .bird-info {
+    flex-direction: column;
+  }
+}
+
+.bird-text {
+  margin-top: 15px;
+  line-height: 1.3em;
+}
+@media screen and (max-width: 480px) {
+  .bird-text {
+    margin-top: 0;
+  }
+}
+
+.button-next-level {
+  width: 100%;
+}
+.button-next-level.disabled {
+  background-color: #303030;
+  cursor: default;
+}/*# sourceMappingURL=style.css.map */

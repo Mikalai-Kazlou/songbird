@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../assets/icons/favicon.png" rel="shortcut icon" />
+  <link rel="stylesheet" href="../../assets/styles/normalize.css">
+  <link rel="stylesheet" href="../../assets/styles/global.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Songbird</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navigation">
+      <ul class="menu">
+        <li><a class="menu-item" href="../main">Main</a></li>
+        <li><a class="menu-item" href="../quiz">Quiz</a></li>
+        <li><a class="menu-item active">Gallery</a></li>
+      </ul>
+    </nav>
+    <ul class="languages">
+      <li class="lang en"><img class="lang-image" src="../../assets/icons/en.jpg" alt="English"></li>
+      <li class="lang ru"><img class="lang-image" src="../../assets/icons/ru.jpg" alt="Russian"></li>
+    </ul>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <section class="section section-info">
+        <div class="bird">
+          <div class="bird-info">
+            <img class="bird-image" src="../../assets/images/bird.jpg" alt="Bird">
+            <div class="question">
+              <h3 class="bird-title medium">******</h3>
+              <div class="separator"></div>
+              <h4 class="bird-subtitle">******</h4>
+              <div class="separator"></div>
+              <div class="audio-player">
+                <div class="controls">
+                  <div class="playback-button">
+                    <svg class="play" viewBox="-200 0 1200 1000">
+                      <path fill="#00bc8c"
+                        d="M96.51 11.97c-31.23 8.05-53.26 32.76-63.42 71.27-3.45 12.84-3.64 29.7-3.64 416.71s.19 403.87 3.64 416.71c16.09 60.74 61.69 86.03
+                         120.9 67.25 9-2.87 53.65-25.1 116.49-58.24 56.14-29.51 221.29-116.3 367.28-192.93 145.99-76.64 271.29-143.31 278.38-148.1 39.28-25.68
+                         59.59-63.04 53.26-97.52-4.79-26.63-24.33-53.07-52.88-71.65C892 399.37 172.58 22.32 154.95 16.38c-18.97-6.33-43.3-8.24-58.44-4.41z">
+                      </path>
+                    </svg>
+                    <svg class="pause no-display" viewBox="0 0 47.607 47.607">
+                      <path fill="#00bc8c" d="M17.991 40.976a6.631 6.631 0 01-13.262 0V6.631a6.631 6.631 0 0113.262 0v34.345zM42.877
+                       40.976a6.631 6.631 0 01-13.262 0V6.631a6.631 6.631 0 0113.262 0v34.345z">
+                      </path>
+                    </svg>
+                  </div>
+                  <div class="timebar">
+                    <div class="timebar-bar"></div>
+                    <div class="timebar-circle"></div>
+                    <div class="timebar-time-info">
+                      <div class="time-start">00:00</div>
+                      <div class="time-finish">00:00</div>
+                    </div>
+                  </div>
+                  <div class="volume">
+                    <img class="volume-icon" src="../../assets/icons/volume.png" alt="Volume">
+                    <div class="button main-button volume-control max">+</div>
+                    <div class="button main-button volume-control min">-</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bird-text"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <a href="https://rs.school/js/" target="_blank"><img class="rs-school-logo" src="../../assets/icons/rs-school.svg"
+        alt="RS School logo"></a>
+    <span>2022</span>
+  </footer>
+
+  <script type="module" src="../../assets/modules/global.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>

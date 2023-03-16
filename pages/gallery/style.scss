@@ -1,0 +1,195 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+  padding: .5em;
+}
+
+.section-info {
+  flex-grow: 1;
+
+  width: 25%;
+  margin: .5em;
+  padding: 1em;
+
+  text-align: left;
+
+  @media screen and (max-width: 1400px) {
+    width: 40%;
+  }
+
+  @media screen and (max-width: 960px) {
+    width: auto;
+  }
+}
+
+.bird-info {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.question {
+  flex-grow: 1;
+  padding: 0 5px 0 20px;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    padding: 1em 0 0;
+  }
+}
+
+.bird-title {
+  margin: 0;
+
+  text-align: left;
+  font-weight: 400;
+
+  &.large {
+    font-size: 2em;
+  }
+
+  &.medium {
+    font-size: 1.5em;
+  }
+}
+
+.bird-subtitle {
+  margin: 0;
+
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.separator {
+  margin: 10px 0;
+  border-bottom: 1px solid #444444;
+}
+
+.bird-image {
+  width: 200px;
+  height: 155px;
+
+  border-radius: 10px;
+}
+
+.audio-player {
+  width: 100%;
+  min-width: 100px;
+
+  margin: 10px 40px 8px 0;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.playback-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  margin: 0 20px 12px 0;
+  transition: 0.2s;
+
+  border: 2px solid #00bc8c;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.playback-button svg {
+  width: 18px;
+  height: 18px;
+
+  transition: 0.2s;
+  color: #54b1c1;
+}
+
+.playback-button:hover svg {
+  width: 18px;
+  height: 18px;
+
+  color: #00bc8c;
+  transform: scale(1.05);
+}
+
+.timebar {
+  position: relative;
+
+  flex: 1 1;
+  margin-top: 12px;
+}
+
+.timebar-bar {
+  height: 4px;
+  background: linear-gradient(to right, rgb(0, 188, 140) 0%, rgb(61, 133, 140) 0%, rgb(115, 115, 115) 0%, rgb(115, 115, 115) 100%);
+
+  cursor: pointer;
+}
+
+.timebar-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 16px;
+  height: 16px;
+
+  transform: translate(-50%, calc(-50% + 2px));
+
+  border-radius: 50%;
+  background-color: grey;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.timebar-time-info {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 8px;
+
+  font-size: 11px;
+  color: lightgrey;
+}
+
+.volume {
+  margin-left: 15px;
+}
+
+.volume-icon {
+  width: 20px;
+  border-radius: 50%;
+}
+
+.volume-control {
+  width: 20px;
+
+  margin-top: 5px;
+  padding: 0;
+  text-align: center;
+
+  border-radius: 50%;
+  background-color: #008966;
+
+  cursor: pointer;
+}
+
+.bird-text {
+  margin-top: 15px;
+  line-height: 1.3em;
+
+  @media screen and (max-width: 480px) {
+    margin-top: 0;
+  }
+}

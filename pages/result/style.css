@@ -1,0 +1,21 @@
+.frame {
+  padding: 50px 30px;
+  border-radius: 5px;
+  background-color: #303030;
+}
+
+.congratulations {
+  margin: 0;
+  font-size: 3em;
+  font-weight: 400;
+}
+@media screen and (max-width: 480px) {
+  .congratulations {
+    font-size: 2em;
+  }
+}
+
+.button-restart {
+  width: 100%;
+  margin: 50px 0 0 0;
+}/*# sourceMappingURL=style.css.map */
